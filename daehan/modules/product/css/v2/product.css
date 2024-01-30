@@ -1,0 +1,494 @@
+/* <=== tporthersha ===> */
+.tporthersha{
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.tporthersha .myTags{
+    margin-bottom: 0;
+}
+/* <=== tporthersha ===> */
+
+/* <=== tporthershb ===> */
+.tporthershb{
+    padding-top: 35px;
+}
+/* <=== tporthershb ===> */
+
+/* <=== hplinkstabs ===> */
+.hplinkstabs{
+    background-color: #d42127;
+}
+.tplinkstabs ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tplinkstabs ul li{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.tplinkstabs li a{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    min-width: 118px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    min-height: 80px;
+}
+.tplinkstabs li a:hover, .tplinkstabs li.current a{
+    background-color: #c10e14;
+}
+.tplinkstabs li a .vicon{
+    width: 50px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.tplinkstabs li a .vicon img{
+    max-width: 90%;
+    max-height: 90%;
+}
+.tplinkstabs li a .vtext{
+    width: 100%;
+
+}
+/* <=== hplinkstabs ===> */
+
+/* <=== tproductma ===> */
+.tproductma{
+    padding: 30px 0 60px;
+}
+.tproductma .matitle{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #d42127;
+    text-transform: uppercase;
+}
+.tproductma .matitle, .tproductma .matitle h2{
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 500;
+}
+.tproductma .cttitle{
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.tproductma .cttitle, .tproductma .cttitle h3{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+}
+/* <=== tproductma ===> */
+
+/* <=== vhinheight ===> */
+.vhinheight .vchange{
+    position: relative;
+}
+.vhinheight .vchange::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    z-index: 1;
+}
+.vhinheight .vhviewtt{
+    text-align: center;
+}
+.vhinheight .vhviewtt > div{
+    display: none;
+}
+.vhviewtt a{
+    font-size: 15px;
+    line-height: 22px;
+    padding: 13px 45px;
+    border: 1px solid #d42127;
+    background-color: #d42127;
+    color: #fff;
+    display: inline-block;
+} 
+.vhviewtt a span{
+    padding-right: 20px;
+    display: inline-block;
+    position: relative;
+}
+.vhviewtt a span::before{
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.vhviewtt .showview a span::before{
+    content: '\f107';
+}
+.vhviewtt .hideview a span::before{
+    content: '\f106';
+}
+/* <=== vhinheight ===> */
+
+/* <=== ittemplatem ===> */
+.ittemplatem{
+    background-color: #f6f6f6;
+    margin-bottom: 20px;
+}
+.ittemplatem.veven{
+    background-color: #fff;
+}
+.ittemplatem .mbgrip{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ittemplatem .mbgrip > div{
+    width: 50%;
+}
+.ittemplatem.veven .mbgrip .lcol{
+    order: 2;
+}
+.ittemplatem .mbdecss{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    align-content: end;
+}
+.ittemplatem .dswrap{
+    max-width: 677px;
+    width: 100%;
+    margin-left: auto;
+    padding: 0 15px;
+}
+.ittemplatem .dsinner{
+    max-width: 570px;
+}
+.ittemplatem .dstitle{
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.ittemplatem .dstitle::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 55px;
+    height: 3px;
+    background-color: #d42127;
+}
+.ittemplatem .dstitle, .ittemplatem .dstitle h2, .ittemplatem .dstitle h3{
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+}
+.ittemplatem .dscapts{
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #d42127;
+    margin-bottom: 10px;
+}
+.ittemplatem .dstends{
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    max-height: calc(24px * 4);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.ittemplatem .dsviews a{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    border: 2px solid #d42127;
+    color: #d42127;
+    padding: 12px 27px;
+}
+.ittemplatem .dsviews a:hover{
+    background-color: #d42127;
+    color: #fff;
+}
+.ittemplatem .dsviews a span{
+    padding-right: 20px;
+    display: inline-block;
+    position: relative;
+}
+.ittemplatem .dsviews a span::before{
+    content: '\f105';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ittemplatem .mbdecss{
+    height: 100%;
+} 
+.ittemplatem .mbthumbs .thumb a{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    -webkit-transition: all 0s linear;
+    -o-transition: all 0s linear;
+    transition: all 0s linear;
+}
+.ittemplatem .mbthumbs .thumb a img{
+    /* display: none; */
+    width: 100%;
+}
+.slmbthumbs .slick-arrow{
+    width: 40px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);   
+    color: #fff;
+    border-radius: 0;
+}
+.slmbthumbs .slick-prev{
+    left: 0;
+}
+.slmbthumbs .slick-next{
+    right: 0;
+}
+/* <=== ittemplatem ===> */
+
+/* <=== tproductmf ===> */
+.tproductmf{
+    padding: 35px 0 60px;
+    background-color: #f6f6f6;
+}
+.tproductmf .mftitle{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 120px;
+    cursor: pointer;
+}
+.tproductmf .mftitle::before{
+    content: '\f106';
+    font-size: 20px;
+    font-weight: bold;
+    color: #d42127;
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tproductmf .mftitle::after{
+    content: 'Thu gá»n';
+    position: absolute;
+    text-transform: none;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #d42127;   
+}
+.tproductmf.active .mftitle::before{
+    content: '\f107';
+}
+.tproductmf.active .mftitle::after{
+    content: 'Má»Ÿ rá»™ng';
+}
+.tproductmf .mftitle, .tproductmf .mftitle h2{
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 500;
+}
+.tproductmf .mfconts{
+    padding-top: 20px;
+}
+.vtableinfo table{
+	width: 100%;
+	border-bottom:solid 1px #f2f2f2;
+	border-right:solid 1px #f2f2f2;
+	background: #fff;
+}
+.vtableinfo table tr td{
+	border-top:solid 1px #f2f2f2;
+	border-left:solid 1px #f2f2f2;
+	padding: 10px 15px;
+	width: 33.333333%;
+}
+.vtableinfo table tr td.tt{
+	font-weight: bold;
+}
+/* <=== tproductmf ===> */
+
+/* <=== tproductmg ===> */
+.tproductmg{
+    padding: 30px 0;
+}
+.itroductmg ul{
+	margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.itroductmg ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.itroductmg ul li{
+	width: 20%;
+	padding: 0 15px;
+    margin-bottom: 20px;
+}
+.itroductmg ul li a{
+	display: block;
+    padding: 8px 0 8px 40px;
+	position: relative;
+}
+.itroductmg ul li a:before{
+	content: "\f1c1";
+	font-family: fontAwesome;
+	position: absolute;
+	left:0;
+	top: -4px;
+	font-size: 35px;
+	line-height: 45px;
+	color:#cc0000;
+}
+/* <=== tproductmg ===> */
+
+@media all and (max-width: 1200px){
+
+}
+@media all and (max-width: 991px){
+    /* <=== tproductma ===> */
+    .tproductma{
+        padding: 20px 0 30px;
+    }
+    .tproductma .matitle{
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .tproductma .matitle, .tproductma .matitle h2{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .tproductma .cttitle{
+        margin-bottom: 10px;
+    }
+    .tproductma .cttitle, .tproductma .cttitle h3{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    /* <=== tproductma ===> */
+
+    /* <=== ittemplatem ===> */
+    .ittemplatem .mbdecss, .ittemplatem .mbthumbs, .ittemplatem .mbthumbs .thumb a{
+        height: auto;
+    }
+    .ittemplatem .mbgrip > div{
+        width: 100%;
+    }
+    .ittemplatem.veven .mbgrip .lcol{
+        order: unset;
+    }
+    .ittemplatem .mbthumbs .thumb a{
+        padding-top: 65.56%;
+    }
+    .ittemplatem .mbgrip{
+        flex-direction: column-reverse;
+    }
+    .ittemplatem .dswrap{
+        max-width: 100%;
+        padding: 0;
+    }
+    .ittemplatem .dsinner{
+        max-width: 100%;
+    }
+    .ittemplatem .mbdecss{
+        padding: 20px 20px 30px;
+    }
+    .ittemplatem .dstitle, .ittemplatem .dstitle h2, .ittemplatem .dstitle h3{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .ittemplatem .dscapts{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .ittemplatem .dstends{
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 15px;
+        max-height: calc(22px * 3);
+        -webkit-line-clamp: 3;
+    }
+    /* <=== ittemplatem ===> */
+
+    /* <=== tproductmf ===> */
+    .tproductmf{
+        padding: 25px 0 30px;
+    }
+    .tproductmf .mftitle{
+        padding-right: 85px;
+    }
+    .tproductmf .mfconts{
+        padding-top: 10px;
+    }
+    .tproductmf .mftitle::before{
+        font-size: 16px;
+    }
+    .tproductmf .mftitle::after{
+        font-size: 14px;
+        line-height: 22px;
+        right: 15px;
+    }
+    .tproductmf .mftitle, .tproductmf .mftitle h2{
+        font-size: 24px;
+        line-height: 35px;
+    }
+    /* <=== tproductmf ===> */
+
+    /* <=== tproductmg ===> */
+    .itroductmg ul li{
+        width: 50%;
+    }
+    /* <=== tproductmg ===> */
+}
+@media all and (max-width: 767px){
+    .vtableinfo table tr td{
+		width: 50%;
+	}
+	/* .vtableinfo table tr td:first-child{
+		display: none;
+	} */
+	.vtableinfo table tr.tt{
+		display: block;
+		width: 100%;
+	}
+	.vtableinfo table tr.tt td{
+		display: block;
+		background: #e4e4e4;
+		width: 200%;
+	}
+    /* <=== tproductmg ===> */
+    .itroductmg ul li{
+        width: 100%;
+    }
+    /* <=== tproductmg ===> */
+}
