@@ -1,0 +1,284 @@
+@import url("vhstyle.css");
+@import url("global.css");
+@import url("style.css?vs=2.0.6");
+@import url("box.css");
+@import url("../style/iconmoon/style.css");
+.scroll-fixed {
+    z-index: 10;
+}
+#vnt-menu-fix {
+    position: fixed;
+    right: 10px;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+#vnt-menu-fix ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#vnt-menu-fix ul li {
+    margin: 5px 0px
+}
+#vnt-menu-fix ul li a {
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: #cf161d;
+    font-size: 25px;
+    line-height: 35px;
+    position: relative;
+    border-radius: 100%;
+    color: #ffffff;
+    border: solid 1px #cf161d;
+    position: relative;
+}
+#vnt-menu-fix ul li a:hover {
+    background: #cf161d;
+    color: #ffffff;
+    border-color: #cf161d;
+}
+#vnt-menu-fix ul li a i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#vnt-menu-fix ul li.go-top a {}
+#vnt-menu-fix ul li.go-top a:hover {}
+#vnt-menu-fix ul li a span {
+    background: #f1f3f5;
+    position: absolute;
+    border: solid 1px #e5e5e5;
+    white-space: nowrap;
+    right: 100%;
+    margin-right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 13px;
+    line-height: 21px;
+    color: #333333;
+}
+#vnt-menu-fix ul li:hover a span {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+    visibility: initial;
+}
+#vnt-form {
+    width: 100%;
+    max-width: 700px;
+    padding: 0;
+    margin-bottom: 0;
+}
+#vnt-form .title {
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    background: #cf161d;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#vnt-form .content {
+    padding: 20px 15px;
+    min-width: 500px;
+}
+#vnt-form .form-group {
+    margin-bottom: 10px;
+}
+#vnt-form input[text],
+#vnt-form select,
+#vnt-form textarea {
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 0 !important;
+    box-shadow: none;
+}
+#vnt-form textarea {
+    height: 80px;
+    resize: none;
+}
+#vnt-form .txtForm {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#vnt-form .gridF {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+#vnt-form .gridF .col {
+    width: 33.333333%;
+    padding: 0 5px;
+}
+#vnt-form .formFa {
+    position: relative;
+}
+#vnt-form .formFa:before {
+    font-family: fontawesome;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #999999;
+}
+#vnt-form .formFa input {
+    padding-right: 35px;
+}
+#vnt-form .radio-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#vnt-form .radio-wrapper label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#vnt-form .radio-wrapper label input {
+    vertical-align: middle;
+    margin: 0;
+    margin-right: 5px
+}
+#vnt-form .radio-wrapper label span {}
+#vnt-form button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #cf161d;
+    color: #ffffff;
+    border: 1px solid #cccccc;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+#vnt-form button[type="submit"]:hover {
+    background: #cf161d;
+    border: 1px solid #cf161d;
+    color: #ffffff;
+}
+.div_input {
+    position: relative;
+    display: block;
+}
+.div_input.has-success em {
+    display: none;
+}
+.div_input.has-error em {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: -40px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    font-style: italic;
+    padding: 3px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.div_input.has-error em::after {
+    position: absolute;
+    font-family: FontAwesome;
+    content: '\f0d7';
+    color: #000;
+    right: 15px;
+    bottom: -15px;
+}
+.div_input.has-error input[type=text],
+.div_input.has-error select {
+    border: 1px solid #f60000 !important;
+}
+.div_input.has-success input[type=text],
+.div_input.has-success select {
+    border: 1px solid #3c763d !important;
+}
+.div_input.has-error em {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: -32px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    font-style: italic;
+    padding: 3px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.div_input.has-error em::after {
+    position: absolute;
+    font-family: "FontAwesome";
+    content: '\f0d7';
+    font-weight: 900;
+    color: #000;
+    right: 15px;
+    bottom: -13px;
+}
+.div_input span.fa {
+    line-height: 32px;
+}
+.black_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 1;
+    -moz-opacity: .5;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+.white_content {
+    height: 50%;
+    left: 25%;
+    /*overflow: auto;*/
+    padding: 16px;
+    position: absolute;
+    top: 35%;
+    width: 50%;
+    z-index: 1002;
+}
+@media (max-width: 600px) {
+    #vnt-form .content {
+        padding: 20px 15px;
+        min-width: auto;
+    }
+}
