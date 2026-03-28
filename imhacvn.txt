@@ -1,4 +1,479 @@
+<style>
 
-<script>
-console.log('x')
-</script>
+/** PHẦN LIÊN HỆ**/
+.footer-wrapper {
+    border-top: none !important;
+}
+section.weather .col,.row.tinchung .col{
+    padding: 0 15px 0px;
+}
+
+.header-bottom {
+    min-height: 0px !important;
+}
+
+/**TEAM**/
+.team-carousel {
+    max-width: 1200px;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+    background: #fff;
+    padding: 20px 0;
+  }
+  .team-carousel:active {
+    cursor: grabbing;
+  }
+  /* Cấu trúc track quan trọng để các item nằm trên 1 hàng */
+  .carousel-track {
+    display: flex;
+    width: max-content; /* Quan trọng: Để track tự giãn theo nội dung */
+    user-select: none;
+  }
+  .carousel-item {
+    flex: 0 0 220px;
+    margin-right: 30px; /* Khoảng cách giữa các item */
+    text-align: center;
+  }
+  .avatar img {
+    width: 220px;
+    height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+    pointer-events: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: block;
+  }
+  .name { 
+    font-weight: bold; 
+    margin-top: 15px; 
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.3;
+    height: 2.6em; /* Giữ độ cao cố định cho tên */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title { 
+    color: #0056b3; 
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+/*************** ADD CUSTOM CSS HERE.   ***************/
+
+.showinfo {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 22;
+    display: block;
+    background: #fff;
+}
+
+.product-small:hover .showinfo {
+    display: block;
+    cursor: pointer;
+    opaticy: 0.5;
+}
+
+@media only screen and (min-width: 1300px) {
+    /*************** ADD MOBILE ONLY CSS HERE  ***************/
+    .container-width, .full-width .ubermenu-nav, .container, .row {
+        max-width: 1200px;
+    }
+}
+
+.row.breaking {
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+
+/* .imhen-bg-yealow{    background-image: -webkit-linear-gradient(0deg, rgb(99 156 231) 8%, rgb(9 84 183) 89%); }
+.imhen-bg-red{        background-image: -webkit-linear-gradient(0deg, #79d1fe 8%, #0cc2ed 89%);}
+.imhen-bg-green{background: linear-gradient(to right, #2ad38b, #0cceb0) !important;}
+.imhen-bg-primary{background-image: -webkit-linear-gradient(0deg, #00b0e5 8%, #0078fb 89%);
+} */
+
+.imhen-bg-yealow {
+    background: #84BD00
+}
+
+.imhen-bg-red {
+    background: #244f99;
+}
+
+.imhen-bg-green {
+    background: #84BD00
+}
+
+.imhen-bg-primary {
+    background: #244f99
+}
+
+.imhen-center .section-title i {
+    opacity: 1;
+}
+
+.imhen-center div.title-m h4 {
+    color: #fff;
+    padding: 0px !important;
+    border-bottom: none !important;
+}
+
+.imhen-center .title-m span.section-title-main {
+    padding-bottom: 0px;
+    margin: 9px auto 0px auto;
+    color: #fff;
+    border-bottom: none !important;
+}
+
+.imhen-center .tabbed-content .nav {
+    width: 100%;
+    margin: 4px 0px;
+}
+
+section.section.afterhead {
+    z-index: 1;
+    margin-top: -5vw;
+}
+
+.transparent .header-main {
+    padding: 25px;
+}
+
+@media screen and (max-width:980px) {
+    .transparent .header-main {
+        padding: 5px;
+    }
+    section.section.afterhead {
+        z-index: 1;
+        margin-top: auto;
+    }
+    section.section.imhen-center h5.post-title, .hoatdong h5.post-title {
+        height: auto;
+        overflow: inherit;
+    }
+    #logo img {
+        max-height: 55px !important;
+    }
+}
+
+.bando p {
+    margin: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px !important;
+    padding: 0px !IMPORTANT;
+    line-height: 0;
+}
+
+p.cat-label.tag-label {
+    background: #03a9f4;
+    padding: 5px 7px;
+    border-radius: 15px;
+}
+
+.imhen-blog .box-vertical .box-text {
+    direction: ltr;
+    display: table-cell;
+    vertical-align: top;
+}
+
+
+/**CUT STRING*/
+
+.sukiennoibat h5.post-title {
+    max-height: 65px;
+    overflow: hidden;
+}
+
+.article-inner .entry-content {
+    padding-top: 5px;
+    padding-bottom: 0;
+    text-align: justify;
+}
+
+ul.menu>li, .widget>ul>li {
+    list-style: none;
+    margin-bottom: .3em;
+    text-align: justify;
+    margin: 0;
+}
+
+.current-menu-item>a {
+    background-color: #e58c1100 !important;
+    border-radius: 3px;
+}
+
+#wide-nav .nav>li:hover {
+    background: #e58c11 !important;
+    height: 40px;
+    border-radius: 3px;
+}
+
+h5.post-title.is-large {
+    text-align: justify;
+}
+
+.absolute-footer {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0px 0 3px;
+    font-size: .9em;
+}
+
+section.section.main-page {
+    background: linear-gradient(#afacdc, #fff 45%) !important
+}
+
+.tin-moi-nhat .col-inner {
+    overflow: hidden;
+    /*
+    box-shadow: 10px 10px 20px 0 rgb(69 61 141 / 25%), -10px -10px 20px 0 #e9e8f58c;
+*/
+    box-shadow: 1px 4px 5px 0 rgb(69 61 141 / 12%), 1px 19px 12px 0 #e9e8f524;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+h2.section-title.section-title-normal i.icon-angle-right {
+    font-size: 25px;
+    font-weight: bold;
+    color: #043c70;
+    opacity: 1;
+}
+.tin-moi-nhat .box-text-inner.blog-post-inner {
+    padding: 1px 10px;
+}
+
+.row.breaking .button {
+    float: left;
+}
+
+.break-slide {
+    width: calc(100% - 120px) !important;
+    float: left;
+    margin-top: -5px;
+}
+
+.dark ul li.bullet-checkmark, .dark ul li.bullet-arrow, .dark ul li.bullet-star {
+    border-color: rgb(255 255 255 / 0%);
+}
+
+.make-it-shaddow {
+    box-shadow: 10px 10px 20px 0 rgb(69 61 141 / 25%), -10px -10px 20px 0 #e9e8f58c;
+    align-items: center;
+    border-radius: 18px;
+    justify-content: center;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.fullstyleif {
+    border: none;
+    width: 100%;
+    height: 400px
+}
+
+.section-title-normal {
+    border-bottom: 2px solid #72727200;
+}
+
+.nav-uppercase>li>a {
+    font-weight: 500;
+}
+
+.tabbed-content h4 {
+    font-size: 1.5rem;
+}
+
+
+/**mod header - footer css*/
+
+.header:not(.transparent) .header-bottom-nav.nav>li>a {
+    color: #ffffff !important;
+}
+
+div#wide-nav .header-button {
+    margin-top: 3px;
+}
+
+
+/**intro**/
+
+.slider-wrapper.relative.imhen-intro .bg.fill.bg-fill.bg-loaded {
+    border-radius: 15px;
+}
+
+
+/* dao tao*/
+
+.section.imhen-blog .Catelogies .box-text, .section.imhen-blog .box-image {
+    width: 50%;
+}
+
+.section.imhen-blog .box.box-default {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.section.imhen-blog .Catelogies .box-text {
+    background: #172e54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    color: #fff;
+}
+
+.section.imhen-blog .Catelogies .box-image {
+    margin-bottom: 0px;
+}
+
+.section.imhen-blog .Catelogies .box-text h5.post-title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.section.imhen-blog .flickity-page-dots {
+    position: absolute;
+    bottom: 35px !important;
+}
+
+.section.imhen-blog .row-slider .flickity-page-dots .dot {
+    background-color: #fff;
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+}
+
+.section.imhen-blog .flickity-page-dots .dot.is-selected {
+    background-color: #7BA01C;
+    opacity: 1;
+}
+
+
+/*center left*/
+
+.center-left .box-text.text-left {
+    padding: 0.8em !important;
+}
+
+.imhen-center .center-left .box.box-vertical {
+    background: #fff;
+    box-shadow: 1px 4px 5px 0 rgb(69 61 141 / 12%), 1px 19px 12px 0 #e9e8f524;
+    margin: 5px 0px;
+}
+
+.imhen-center .tabbed-content .nav span {
+    font-size: 0.9rem;
+}
+
+.imhen-center button.button.secondary.is-shade {
+    color: #000;
+    font-size: 1em;
+}
+
+button.button.primary.is-shade {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+.background-video {
+    position: absolute;
+    right: 5%;
+}
+@media only screen and (max-width: 980px) {
+    .section.imhen-blog .Catelogies .box-text, .section.imhen-blog .box-image {
+        width: 100%;
+    }
+    .section.imhen-blog .box.box-default {
+        display: inherit;
+    }
+    .background-video{
+        display: none;
+    }
+}
+
+
+
+.banner-btn-trang {
+    border: 1px solid #fff9 !important;
+}
+.banner-btn-trang * {
+    color: #fff !important;
+}
+.header-main .nav > li > a {
+    color: #fff;
+}
+
+#top-bar ul li a {
+    font-size: 13px !important;
+}
+
+div#gtranslate_wrapper {
+    position: inherit !important;
+}
+
+a#top-link {
+    background: #FF5722;
+    color: #fff;
+}
+
+
+.header-top {
+    background: linear-gradient(92deg,#245a8d,#427bb1) !important;
+    box-shadow: 10px 10px 20px 0 rgb(69 61 141 / 25%), -10px -10px 20px 0 #e9e8f58c;
+}
+
+.nav:not(.nav-slide) .active>.children {
+    background: #035fa9;
+    z-index: 999;
+}
+
+/** TẠM KHÓA WEATHER**/
+.tomorrow {
+    pointer-events: none;
+}
+.tomorrow a {
+    display: none;
+}
+
+div#ct7{font-size:0.9rem}
+
+
+th, td {
+    border: 1px solid #9f9f9f !important;
+}
+table {
+		padding:10px
+}
+.khongvien th, .khongvien td {
+    border: 1px solid #fff !important;
+}
+
+@media only screen and (max-width: 768px) {
+table {
+overflow: hidden;
+overflow-x: scroll;
+display:block;
+	padding:10px
+}
+}
+#wp-admin-bar-flatsome_panel{display:none !important}
+h5.post-title.is-large {
+    text-align: justify;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+
+.header-bg-color,section.section.imhen-foot.dark {
+    background-color: #2b68a1;
+    background: linear-gradient(92deg, #394495, #30a5ec) !important;
+}
+</style>
